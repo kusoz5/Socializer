@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstagramStory">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/loadingPanelInstagramStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/loadingcursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/instastoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/loadingPanelInstagramStory"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:id="@+id/InstaUser"
+        android:layout_width="140dp"
+        android:layout_height="140dp" />
+    <TextView
+        android:textColor="#131313"
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InstaUser"
+        android:layout_centerInParent="true"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

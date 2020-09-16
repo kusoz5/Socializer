@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/splashscreen">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_above="@id/username"
+        android:id="@+id/Signin"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In Insta"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        app:fontFamily="@font/amita_bold" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#fff"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:hint="Username"
+        android:layout_width="285dp"
+        android:layout_height="60dp" />
+    <EditText
+        android:layout_centerInParent="true"
+        android:id="@+id/password"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_below="@id/username"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_width="285dp"
+        android:backgroundTint="#fff"
+        android:fontFamily="serif"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:id="@+id/passwordVisiblity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="56dp"
+        android:src="@drawable/eye_close" />
+
+    <Button
+        android:id="@+id/login"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="260dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:background="@drawable/fadedresource"
+        android:text="Login" />
+    <TextView
+        android:id="@+id/MadeWith"
+        android:fontFamily="@font/amita_bold"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="5dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_below="@id/login"
+        android:text="Socializer "
+        android:layout_width="wrap_content"
+        android:layout_height="49dp" />
+
+
+</RelativeLayout>

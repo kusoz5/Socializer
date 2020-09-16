@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DownloadedImageViewer">
+    <LinearLayout
+        android:layout_weight=".08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+    <RelativeLayout
+
+        android:background="@drawable/framescreeb"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+      <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+          android:id="@+id/DownloadVideoPlayerView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/plus"
+            android:backgroundTint="#fff"
+            android:id="@+id/FabOfDownloadVideoViewer"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/delete"
+            android:backgroundTint="#fff"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@id/FabOfDownloadVideoViewer"
+            android:id="@+id/DeleteFabDownloadVideoViewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/share_fab"
+            android:backgroundTint="#fff"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@id/DeleteFabDownloadVideoViewer"
+            android:visibility="invisible"
+            android:id="@+id/ShareFabDownloadVideoViewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight=".08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+</LinearLayout>

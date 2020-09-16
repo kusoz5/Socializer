@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="1.5dp"
+        android:layout_marginLeft="2dp"
+        app:cardElevation="12dp"
+        android:background="@drawable/card_view_border"
+        android:shadowColor="#000"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/storyWhatsapp"
+            android:src="@drawable/whatsapp"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

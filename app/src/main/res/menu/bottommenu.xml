@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id = "@+id/menuWhatsapp" android:title="WhatsApp" android:icon="@drawable/whatsapp">
+    </item>
+    <item android:id="@+id/menuInstaStory" android:title="Insta Story" android:icon="@drawable/insta">
+    </item>
+    <item android:id="@+id/menuInstaPost" android:title="Insta Post" android:icon="@drawable/instagrampost"></item>
+    <item android:id="@+id/menuDownloads" android:title="Downloads" android:icon="@drawable/downloads"></item>
+
+</menu>

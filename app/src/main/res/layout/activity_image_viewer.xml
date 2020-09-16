@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context=".ImageViewer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1">
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <ImageView
+        android:id="@+id/DownloadWhatsAppImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/splashscreen"
+        android:scaleType="fitCenter" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/share_fab_whatsappi"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/download_fab_whatsappi"
+        android:backgroundTint="#fffefe"
+        android:elevation="16dp"
+        android:src="@drawable/share_fab"
+        android:visibility="invisible"
+        android:layout_margin="16dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/delete_fab_whatsappi"
+            android:backgroundTint="#fffefe"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:elevation="16dp"
+            android:visibility="invisible"
+            android:layout_above="@id/download_fab_whatsappi"
+            android:src="@drawable/delete"
+            android:layout_margin="16dp" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/download_fab_whatsappi"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fffefe"
+            android:src="@drawable/download_fab"
+            android:layout_margin="16dp"
+            android:elevation="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@id/main_fab_whatsappi"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/main_fab_whatsappi"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        android:backgroundTint="#fffefe"
+        android:src="@drawable/plus"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"></FrameLayout>
+</LinearLayout>
